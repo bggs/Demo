@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.demo.activity.MainActivity">
+
+    <TextView
+        android:id="@+id/txt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="请绘制你的密码:" />
+
+    <com.example.demo.view.LockView
+        android:id="@+id/my_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:correctColor="#00FF00"
+        app:lineWidth="5dp"
+        app:normalColor="#888888"
+        app:selectColor="#FFFF00"
+        app:wrongColor="#FF0000" />
+
+</RelativeLayout>
